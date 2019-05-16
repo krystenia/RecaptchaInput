@@ -43,7 +43,7 @@ implementation 'com.github.krystenia:RecaptchaInput:1.1'
         app:textSize="18sp"
         app:num="4"/>
 ```
-4.完成的回调
+4.输入完成的回调
 ```
 RecaptchaInputView input=findViewById(R.id.input);
         input.setCompleteListener(new RecaptchaInputView.OnCompleteLinster() {
