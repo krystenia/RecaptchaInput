@@ -43,5 +43,15 @@ implementation 'com.github.krystenia:RecaptchaInput:1.1'
         app:textSize="18sp"
         app:num="4"/>
 ```
+4.完成的回调
+```
+RecaptchaInputView input=findViewById(R.id.input);
+        input.setCompleteListener(new RecaptchaInputView.OnCompleteLinster() {
+            @Override
+            public void onComplete(String str) {
+                Toast.makeText(MainActivity.this, ""+str, Toast.LENGTH_SHORT).show();
+            }
+        });
+```
 
 ![image](https://github.com/krystenia/RecaptchaInput/blob/master/ezgif.com-video-to-gif.gif )  
